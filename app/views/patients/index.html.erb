@@ -2,6 +2,7 @@
   <%@patients.each do |patient| %>
     <ul>
       <li><%=link_to patient.name, patient_path(patient) %></li>
+      <li>Appointment Count: <%=patient.appointments.count%></li>
       <%binding.pry%>
     </ul>
     <%end%>
