@@ -2,5 +2,6 @@
   <%@patients.each do |patient| %>
     <ul>
       <li><%=link_to patient.name, patient_path(patient) %></li>
+      <%binding.pry%>
     </ul>
     <%end%>
