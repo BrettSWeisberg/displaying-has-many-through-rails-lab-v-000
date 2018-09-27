@@ -4,6 +4,6 @@
 
     <li><%= link_to appointment.doctor.name, doctor_path(appointment.doctor)%></li>
     <%binding.pry%>
-    <li><%= appointment.appointment_datetime.to_formatted_s(:long_ordinal) %></li>
+    <li><%= appointment.appointment_datetime.to_date.strftime("%B %e, %Y at %I:%M %p") %></li>
     <%end%>
 </ul>
